@@ -10,7 +10,7 @@ import torch.multiprocessing as mp
 from concurrent.futures import ProcessPoolExecutor
 import torchaudio
 
-import hparams 
+from utils.hparams import get_hparams_from_file, HParams
 from utils.mel_processing import wav_to_mel
 
 os.environ["OMP_NUM_THREADS"] = "1"
