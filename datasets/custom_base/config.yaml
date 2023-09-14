@@ -18,8 +18,8 @@ train:
   c_kl_audio: 0.05 # 0.05 Allow more audio variation. default: 1
 
 data:
-  training_files: datasets/ljs_base/filelists/train.txt
-  validation_files: datasets/ljs_base/filelists/val.txt
+  training_files: datasets/custom_base/filelists/train.txt
+  validation_files: datasets/custom_base/filelists/val.txt
   vocab_file: datasets/ljs_base/vocab.txt
   text_cleaners:
     - phonemize_text
@@ -27,9 +27,9 @@ data:
     - tokenize_text
     - add_bos_eos
   cleaned_text: true
-  language: en-us
+  language: ja
   bits_per_sample: 16
-  sample_rate: 22050
+  sample_rate: 44100
   n_fft: 2048
   hop_length: 256
   win_length: 1024
