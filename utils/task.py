@@ -12,7 +12,6 @@ MATPLOTLIB_FLAG = False
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 logging.getLogger("numba").setLevel(logging.WARNING)
 logger = logging
-vocab_file = 'datasets/custom_base/vocab.txt'
 
 def load_checkpoint(checkpoint_path, model, optimizer=None):
     assert os.path.isfile(checkpoint_path)
