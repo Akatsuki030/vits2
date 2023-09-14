@@ -19,3 +19,4 @@ PyYAML
 ipykernel
 pytorch_lightning
 utils
+hparams
