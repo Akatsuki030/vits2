@@ -18,4 +18,3 @@ tqdm
 PyYAML
 ipykernel
 pytorch_lightning
-tensorrt
